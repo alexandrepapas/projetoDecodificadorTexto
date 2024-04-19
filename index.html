@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Codificador de textos é o lugar ideal para você codificar e decodificar seus textos de forma divertida!"
+    />
+    <title>Codificador</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="botoes.css">
+    <link rel="stylesheet" href="entradaTexto.css">
+    <link rel="stylesheet" href="saidaTexto.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <p>
+        <a href="https://www.alura.com.br/" target="_blank"
+          ><img class="logo" src="assets/Logo.png" alt="logo-alura" />
+        </a>
+      </p>
+    </header>
+
+    <main class="main">
+      <section class="principal">
+        <!--onde o usuário digita a sua mensagem-->
+        <textarea
+          class="texto-entrada"
+          name="input-texto"
+          id="input-texto"
+          maxlength="120"
+          
+          placeholder="Digite aqui"
+          spellcheck="false"
+        ></textarea>
+
+        <div class="informacao">
+          <img
+            class="exclamacao"
+            src="assets/exclamacao.png"
+            alt="ponto de exclamação"
+          />
+          <label for="input-texto">Apenas letras minúsculas e sem acento</label>
+        </div>
+
+        <!--botões-->
+        <div class="button">
+          <input
+            class="botoes"
+            type="submit"
+            value="criptografar"
+            id="botaoCriptografar"
+          />
+          <input
+            class="botoes"
+            type="submit"
+            value="descriptografar"
+            id="botaoDesincriptografar"
+          />
+        </div>
+      </section>
+
+      <section class="resultado-tela">
+        <textarea
+          classe="resultado-msg"
+          name="resultado"
+          id="resultado"
+          placeholder="Nenhuma mensagem encontrada"
+          spellcheck="false"
+        ></textarea>
+        <input class="botoes" type="submit" value="copiar" id="botaoCopia" />
+      </section>
+    </main>
+    <footer>
+     
+        <div class="footer">
+          <p>By  Alexandre Papalardo</p>
+          <a
+            href=""
+            target="_blank"
+            rel="externo"
+            ><img src="assets/logo-git_menor.png" alt="ícone do github"
+          /></a>
+        </div>
+      
+    </footer>
+    
+  </body>
+</html>
